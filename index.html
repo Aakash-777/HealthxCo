@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Kaushan+Script&family=Nunito:wght@300&family=Outfit:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>HealthxCo</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <h2 id="logo">HealthxCo</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a id="active" href="#main1">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+            <ul class="login-signup">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="below-header">
+        <ul class="below-options">
+            <li><a href="#main2" id="opt2">BMI Calculator</a></li>
+            <li><a href="#" id="opt3">Disease Predictor</a></li>
+            <li><a href="#" id="opt4">Cataract predictor</a></li>
+            <li><a href="#" id="opt5">Health</a></li>
+        </ul>
+        <div class="below-search-area">
+            <input type="text" placeholder="Looking For...">
+        </div>
+    </div>
+    <div class="main" id="main1">
+        <div class="img-con">
+            <img src="bmi_img_2.jpg" alt="img">
+        </div>
+            <div class="content">
+                <h1>“The greatest wealth is health.”</h1>
+                <h4>– Virgil</h4>
+            </div>
+    </div>
+    
+    <div class="main" id="main2">
+        <div class="img-con">
+            <img src="veggies.jpg" alt="img">
+        </div>
+            <div class="content">
+                <h1>BMI Calculator</h1>
+                
+                <div class="input-field">
+                    <input type="number" id="num1" placeholder=" Weight (in Kilograms)">
+        
+                    <input type="number" id="num2" placeholder=" Height (in Meters)">
+                </div>
+                
+                <button id="button1" onclick="calculateSum()">Calculate</button>
+                
+                <div class="result" id="result"></div>
+                <div class="result" id="result1"></div>
+            </div>
+    </div>
+
+</body>
+
+</html>

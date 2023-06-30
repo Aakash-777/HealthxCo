@@ -1,0 +1,235 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    /* border: 2px solid green; */
+    /* background-color: aqua; */
+    padding: 5px 25px;
+    position: fixed;
+    z-index: 90;
+    width: 100%;
+    background-color: white;
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h2{
+     font-size: 40px;
+     font-family: 'Outfit', sans-serif;
+     color: rgb(255, 60, 138);
+}
+.nav-links{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0px 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition-duration:  0.3s ;
+    
+
+}
+.nav-links a:hover,.nav-links #active{
+    color:black;
+    border-bottom: 2px solid gray;
+    
+
+}
+
+.login-signup{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-signup li{
+    margin:0px 5px;
+    padding: 5px 10px;
+}
+.login-signup a{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+}
+.login-signup li:last-child {
+    background-color: rgb(255, 60, 138);
+    border-radius: 9px;
+    transition-duration: background-color 0.3s;
+    
+}
+.login-signup li:last-child:hover {
+    background-color: rgb(252, 9, 106);
+    
+}
+.login-signup li:last-child a{
+    color: white;
+}
+
+.login-signup li:first-child {
+    border: 1px solid gray;
+    border-radius: 9px;
+    transition: background-color 0.3s;
+    
+}
+.login-signup li:first-child:hover{
+    background-color:rgb(238, 238, 238);
+}
+.below-header{
+    top: 60px;
+    z-index: 90;
+    position: fixed;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    justify-content: center;
+    background-color: rgb(255, 103, 164);
+    /* background-color: rgb(255, 137, 184); */
+    padding: 10px 25px;
+}
+.below-options{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 700px;
+}
+.below-options li{
+    margin: 0px 25px;
+}
+.below-options a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.below-options a:hover{
+    color:rgb(255, 0, 102);
+    /* color:rgb(255, 20, 114); */
+    
+    
+}
+.below-search-area input{
+    border-radius: 9px ;
+    border: 2px solid white;
+    padding: 4px 8px;
+    margin-left: -250px;
+    width: 250px;
+}
+.main {   
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;   
+}
+.main .img-con{
+    width:100%;
+}
+.main img{
+  width: 100%;
+}
+.main .content{
+    top: 250px;
+    left: 50px;
+    position: absolute;
+    z-index: 5;
+    color: white;
+    font-size: 30px;
+    font-family: 'Arimo', sans-serif;
+}
+#main2 .content {
+    width: 655.2px;
+    left:30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 20px black;
+    /* border: 2px solid blue; */
+}
+.input-field{
+    z-index: 10;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.input-field input{
+    border:none;
+    width: 200px;
+    height: 50px;
+    border-radius: 9px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0px 0px 10px black;
+    margin:10px;
+}
+.content button{
+    width:430px;
+    height:30px;
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px black;
+    text-transform: uppercase;
+}
+.content button:hover{
+    background-color:rgb(207, 207, 207) ;
+}
+.content #result{
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 3px black;
+    font-size: 50px;
+    font-family: 'Outfit', sans-serif;
+}
+.content #result1{
+    /* margin-top: 10px; */
+    margin-left: 20px;
+    text-align: center;
+    /* color: rgb(0, 0, 0); */
+    text-shadow: 0px 0px 3px black;
+    font-size: 45px;
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
