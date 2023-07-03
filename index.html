@@ -7,13 +7,36 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Kaushan+Script&family=Nunito:wght@300&family=Outfit:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1a301f8488.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="side_menu_style.css">
+    <script src="side_menu.js" defer></script>
+
     <title>HealthxCo</title>
 </head>
 
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#" onclick="closeNav()">Home</a>
+    <a href="#" onclick="closeNav()">About Us</a>
+    <a href="#" onclick="closeNav()">Contact Us</a>
+    <a href="#" onclick="closeNav()">More</a>
+
+        <ol class="sidenav-cals">
+            <li><a href="#main2" id="opt2" onclick="closeNav()">BMI Calculator</a></li>
+            <li><a href="#" id="opt3" onclick="closeNav()">Disease Predictor</a></li>
+            <li><a href="#" id="opt4" onclick="closeNav()">Cataract predictor</a></li>
+            <li><a href="#" id="opt5" onclick="closeNav()">Health</a></li>
+        </ol>
+
+  </div>
+
 <body>
+
     <header>
         <div class="nav">
+            <i class="fa-solid fa-bars" onclick="openNav()"></i>
             <div class="logo">
                 <h2 id="logo">HealthxCo</h2>
             </div>
@@ -37,13 +60,11 @@
             <li><a href="#" id="opt5">Health</a></li>
         </ul>
         <div class="below-search-area">
+            <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" placeholder="Looking For...">
         </div>
     </div>
     <div class="main" id="main1">
-        <div class="img-con">
-            <img src="bmi_img_2.jpg" alt="img">
-        </div>
             <div class="content">
                 <h1>“The greatest wealth is health.”</h1>
                 <h4>– Virgil</h4>
@@ -51,9 +72,6 @@
     </div>
     
     <div class="main" id="main2">
-        <div class="img-con">
-            <img src="veggies.jpg" alt="img">
-        </div>
             <div class="content">
                 <h1>BMI Calculator</h1>
                 

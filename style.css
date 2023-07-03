@@ -7,6 +7,10 @@ html{
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 header{
     /* border: 2px solid green; */
     /* background-color: aqua; */
@@ -15,6 +19,9 @@ header{
     z-index: 90;
     width: 100%;
     background-color: white;
+}
+.nav i{
+    display: none;
 }
 .nav{
     display:flex;
@@ -101,8 +108,7 @@ header{
     position: fixed;
     width:100%;
     display:flex;
-    justify-content: space-between;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: rgb(255, 103, 164);
     /* background-color: rgb(255, 137, 184); */
     padding: 10px 25px;
@@ -111,8 +117,8 @@ header{
     list-style: none;
     display:flex;
     justify-content: center;
-    align-items: center;
-    margin-right: 700px;
+    align-items: center;;
+    
 }
 .below-options li{
     margin: 0px 25px;
@@ -128,21 +134,28 @@ header{
 .below-options a:hover{
     color:rgb(255, 0, 102);
     /* color:rgb(255, 20, 114); */
-    
-    
+       
 }
+.below-search-area i{
+    display: none;
+}
+
 .below-search-area input{
     border-radius: 9px ;
     border: 2px solid white;
     padding: 4px 8px;
-    margin-left: -250px;
     width: 250px;
 }
 .main {   
     position: relative;
     width: 100%;
-    height: 100vh;
     overflow: hidden;   
+    position: relative;
+    height: 100vh;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    /* border: 2px solid red; */
 }
 .main .img-con{
     width:100%;
@@ -150,18 +163,65 @@ header{
 .main img{
   width: 100%;
 }
-.main .content{
-    top: 250px;
+
+#main1 .content{
+    /* top: 250px;
     left: 50px;
-    position: absolute;
-    z-index: 5;
-    color: white;
+    position: absolute; */
+    position: relative;
+    top:200px;
+    margin: 0% 12%;
+    width: 1100px;
+    z-index: 1;
+    /* text-shadow: 0px 0px 10px black; */
+    color: #fff;
     font-size: 30px;
     font-family: 'Arimo', sans-serif;
 }
+#main1:before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    background-image: url('bmi_img_2.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    z-index: -1;
+}
+#main2{
+    position: relative;
+    width: 100%;
+    overflow: hidden;   
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+#main2:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('veggies.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    z-index: -1;
+}
+
 #main2 .content {
+
+    position: relative;
+    top: 50px;
+    z-index: 1;
     width: 655.2px;
-    left:30%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -172,6 +232,11 @@ header{
     text-shadow: 0px 0px 20px black;
     /* border: 2px solid blue; */
 }
+
+#main2 .content h1{
+    font-family: 'Arimo', sans-serif;
+}
+
 .input-field{
     z-index: 10;
     display: flex;
@@ -223,13 +288,122 @@ header{
     text-transform: uppercase;
 }
 
+/* big-876   (min-width: 601px) and */
+
+@media (min-width: 642px) and (max-width: 876px) {
+
+    .below-search-area i{
+        display: inline-block;
+        color: white;
+        font-size: 15px;
+    }
+    
+    .below-search-area input{
+        display: none;
+    }
+
+    .nav-links{
+        display:none;    
+    }
+    .nav i{
+        display: block;
+        color: gray;
+        font-size: 20px;
+    }
+    .login-signup li:first-child{
+        display: none;
+    }
+    .nav{
+        justify-content: space-between;
+    }
+}
+@media (max-width: 642px){
+    .below-search-area i{
+        display: inline-block;
+        color: white;
+        font-size: 20px;
+
+    }
+    
+    .below-search-area input{
+        display: inline-block;
+        margin-left:10px;
+    }
+
+    .nav-links{
+        display:none;    
+    }
+    .nav i{
+        display: block;
+        color: gray;
+        font-size: 20px;
+    }
+    .login-signup li:first-child{
+        display: none;
+    }
+    .nav{
+        justify-content: space-between;
+    }
+    .below-options{
+        display: none;
+        
+    }
+
+
+}
+@media (max-width: 576px){
+    .below-search-area i{
+        display: inline-block;
+        color: white;
+        font-size: 20px;
+
+    }
+    
+    .below-search-area input{
+        display: inline-block;
+        margin-left:10px;
+    }
+
+    .nav-links{
+        display:none;    
+    }
+    .nav{
+        justify-content: space-between;
+        height: 51px;
+    }
+    .nav i{
+        display: block;
+        color: gray;
+        font-size: 20px;
+    }
+    .nav .logo h2{
+        font-size: 33px;
+    }
+    .login-signup li:first-child{
+        display: none;
+    }
+    
+    .below-options{
+        display: none;
+        
+    }
+    #main1 .content {
+        font-size: 24px;
+        margin: 0px 15px;
+        top:150px;
+    }
+    #main2 .content h1{
+        font-size: 50px;
+    }
+    #main2 .content .input-field input{
+        width: 150px;
+        font-size: 15px;
+    }
+    #main2 .content #button1{
+        width: 300px;
+    }
 
 
 
 
-
-
-
-
-
-
+}
