@@ -41,10 +41,8 @@ function calculateSum() {
 }
 
 bmibtn.addEventListener('click', (e) =>{
-  if (window.innerWidth > 700){
   e.preventDefault();
   inputNum1.focus();
-}
 });
 
 const manageOnEnter = (e)=>{
