@@ -54,5 +54,7 @@ const manageOnEnter = (e)=>{
     }
 };
 
+if (window.innerWidth > 450){
   inputNum1.addEventListener('keyup', manageOnEnter);
   inputNum2.addEventListener('keyup', manageOnEnter);
+}
