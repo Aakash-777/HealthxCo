@@ -46,15 +46,16 @@ bmibtn.addEventListener('click', (e) =>{
 });
 
 const manageOnEnter = (e)=>{
+  if (window.innerWidth > 450){
     e.preventDefault();
     if(e.key == 'Enter'){
       const jump = inputNum1.value==="" && inputNum2.value!=="" ? inputNum1: inputNum2;
       if((inputNum1.value=="" || inputNum2.value=="")) jump.focus();
       else document.querySelector("#button1").click();
     }
+  }
 };
 
-if (window.innerWidth > 450){
+
   inputNum1.addEventListener('keyup', manageOnEnter);
   inputNum2.addEventListener('keyup', manageOnEnter);
-}
