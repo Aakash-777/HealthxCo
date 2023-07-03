@@ -41,18 +41,18 @@ function calculateSum() {
 }
 
 bmibtn.addEventListener('click', (e) =>{
+  if (window.innerWidth > 700){
   e.preventDefault();
   inputNum1.focus();
+}
 });
 
 const manageOnEnter = (e)=>{
-  if (window.innerWidth > 700){
     e.preventDefault();
     if(e.key == 'Enter'){
       const jump = inputNum1.value==="" && inputNum2.value!=="" ? inputNum1: inputNum2;
       if((inputNum1.value=="" || inputNum2.value=="")) jump.focus();
       else document.querySelector("#button1").click();
-    }
   }
 };
 
